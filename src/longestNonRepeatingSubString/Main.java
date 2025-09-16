@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please Enter String: ");
         String s = scanner.next();
-        String result = Solution.findLongestNonRepeatingSubstring(s);
+        String result = Solution.test(s);
         System.out.printf("Longest substring without repeating chars: %s and it's length is %d", result, result.length());
         scanner.close();
     }

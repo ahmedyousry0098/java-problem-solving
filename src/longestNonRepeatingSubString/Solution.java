@@ -30,4 +30,25 @@ public class Solution {
 
         return longestSubString;
     }
+
+    public static String test(String s) {
+        HashMap<Character, Integer> visitedChars = new HashMap<>();
+        String longest = "";
+
+        for (int r=0, l=0; r<s.length(); r++) {
+            char currentChar = s.charAt(r);
+
+            if (visitedChars.containsKey(currentChar)) {
+                l = visitedChars.get(currentChar) + 1;
+            }
+
+            if ((r-l)+1 > longest.length()) {
+                longest = s.substring(l, r+1);
+            }
+
+            visitedChars.put(currentChar, r);
+        }
+
+        return longest;
+    }
 }
