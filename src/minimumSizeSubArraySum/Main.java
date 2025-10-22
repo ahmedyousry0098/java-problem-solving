@@ -1,4 +1,4 @@
-package minimumSizeSubarraySum;
+package minimumSizeSubArraySum;
 
 public class Main {
     public static void main(String[] args) {

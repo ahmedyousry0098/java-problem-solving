@@ -1,6 +1,4 @@
-package minimumSizeSubarraySum;
-
-import java.util.HashMap;
+package minimumSizeSubArraySum;
 
 public class Solution {
     public int minSubArrayLen(int target, int[] nums) { // O(n) Time Complexity
